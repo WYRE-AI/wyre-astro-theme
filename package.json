@@ -1,0 +1,33 @@
+{
+  "name": "@wyre/astro-theme",
+  "version": "1.0.0",
+  "description": "WYRE Technology brand theme for Astro Starlight documentation sites",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./styles": "./src/styles/theme.css",
+    "./styles/theme.css": "./src/styles/theme.css",
+    "./preset": "./src/preset.js"
+  },
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "astro",
+    "starlight",
+    "theme",
+    "wyre",
+    "documentation"
+  ],
+  "author": "WYRE Technology",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wyre-technology/wyre-astro-theme"
+  },
+  "peerDependencies": {
+    "@astrojs/starlight": ">=0.20.0",
+    "astro": ">=4.0.0"
+  }
+}
