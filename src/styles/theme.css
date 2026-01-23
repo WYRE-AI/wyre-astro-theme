@@ -24,9 +24,9 @@
 
 :root {
   /* WYRE Brand Colors - Light Mode */
-  --sl-color-accent-low: #007a85;
-  --sl-color-accent: #00c9db;
-  --sl-color-accent-high: #5de0eb;
+  --sl-color-accent-low: #e6fafb;
+  --sl-color-accent: #00a8b8;
+  --sl-color-accent-high: #005c66;
 
   /* CTA Yellow */
   --wyre-yellow: #ede947;
@@ -35,17 +35,21 @@
   /* Text colors */
   --sl-color-white: #ffffff;
   --sl-color-black: #1a1a1a;
-  --wyre-text: #3a3a3a;
+  --wyre-text: #2c3e50;
   --wyre-text-muted: #6b7280;
   --wyre-text-faint: #9ca3af;
 
-  /* Gray scale */
+  /* Gray scale - Light mode: 1=lightest (backgrounds), 6=darkest (text) */
   --sl-color-gray-1: #f8f9fa;
-  --sl-color-gray-2: #f1f3f5;
-  --sl-color-gray-3: #e9ecef;
-  --sl-color-gray-4: #ced4da;
-  --sl-color-gray-5: #6b7280;
-  --sl-color-gray-6: #3a3a3a;
+  --sl-color-gray-2: #e9ecef;
+  --sl-color-gray-3: #ced4da;
+  --sl-color-gray-4: #6b7280;
+  --sl-color-gray-5: #3a3a3a;
+  --sl-color-gray-6: #1a1a1a;
+
+  /* Text - explicit overrides for light mode readability */
+  --sl-color-text: #2c3e50;
+  --sl-color-text-invert: #ffffff;
 
   /* Background */
   --sl-color-bg: #ffffff;
@@ -53,7 +57,7 @@
   --sl-color-bg-sidebar: #f8f9fa;
 
   /* Link colors */
-  --sl-color-text-accent: #00a8b8;
+  --sl-color-text-accent: #00899a;
 
   /* Typography */
   --sl-font: 'Nunito Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
@@ -82,13 +86,25 @@
 
 /* Dark mode overrides */
 :root[data-theme='dark'] {
-  --sl-color-accent-low: #00a8b8;
+  --sl-color-accent-low: #0a2e33;
   --sl-color-accent: #00c9db;
   --sl-color-accent-high: #8ef4fc;
 
   /* Adjusted yellow for dark backgrounds */
   --wyre-yellow: #f0ec5a;
   --wyre-yellow-hover: #fffa6e;
+
+  /* Gray scale - Dark mode: 1=lightest (text), 6=darkest (backgrounds) */
+  --sl-color-gray-1: #e5e7eb;
+  --sl-color-gray-2: #c9cdd3;
+  --sl-color-gray-3: #7d8590;
+  --sl-color-gray-4: #444c56;
+  --sl-color-gray-5: #2d333b;
+  --sl-color-gray-6: #1c2128;
+
+  /* Text - explicit overrides for dark mode */
+  --sl-color-text: #e5e7eb;
+  --sl-color-text-invert: #1a1a1a;
 
   /* Dark backgrounds - cool slate */
   --sl-color-bg: #0f1419;
@@ -128,13 +144,7 @@ body,
 .sl-markdown-content li {
   font-family: var(--sl-font);
   font-weight: 400;
-  color: var(--wyre-text);
-}
-
-:root[data-theme='dark'] .sl-markdown-content,
-:root[data-theme='dark'] .sl-markdown-content p,
-:root[data-theme='dark'] .sl-markdown-content li {
-  color: #e5e7eb;
+  color: var(--sl-color-text);
 }
 
 /* ============================================================

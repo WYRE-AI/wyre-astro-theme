@@ -19,7 +19,7 @@
 export const wyreStarlightPreset = {
   // Custom CSS - import the theme
   customCss: [
-    '@wyre/astro-theme/styles/theme.css',
+    '@wyre-technology/astro-theme/styles/theme.css',
   ],
 
   // Default head elements
