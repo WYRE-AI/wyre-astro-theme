@@ -158,6 +158,7 @@ nav a[aria-current='page'],
 nav a[aria-current='true'] {
   border-left: 3px solid var(--sl-color-accent);
   background-color: rgba(0, 201, 219, 0.08);
+  color: var(--sl-color-white);
   font-weight: 600;
 }
 
