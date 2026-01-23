@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.3] - 2026-01-23
+
+### Fixed
+
+- Rewrote color system to match Starlight's semantic color architecture
+- Dark mode colors now in `:root` (Starlight's default), light mode in `:root[data-theme='light']`
+- Properly inverted semantic names: "white" = text/foreground, "black" = background in both modes
+- Fixed unlayered CSS overriding Starlight's `@layer` color inversions for light mode
+
 ## [1.0.2] - 2026-01-23
 
 ### Fixed

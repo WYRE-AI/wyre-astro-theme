@@ -1,6 +1,6 @@
 {
   "name": "@wyre-technology/astro-theme",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "WYRE Technology brand theme for Astro Starlight documentation sites",
   "type": "module",
   "main": "./src/index.js",
