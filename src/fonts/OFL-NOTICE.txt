@@ -1,0 +1,12 @@
+The font files in this directory are subsets of:
+
+  Oswald      — Copyright 2016 The Oswald Project Authors
+                (https://github.com/googlefonts/OswaldFont)
+  Nunito Sans — Copyright 2014 The Nunito Sans Project Authors
+                (https://github.com/googlefonts/NunitoSans)
+
+Both are licensed under the SIL Open Font License, Version 1.1
+(https://openfontlicense.org). They are redistributed here (variable-weight
+woff2, latin + latin-ext subsets, obtained via Google Fonts) so that sites
+consuming @wyre-technology/astro-theme serve fonts from their own origin
+with no third-party requests.

@@ -31,21 +31,6 @@ export const wyreStarlightPreset = {
         content: '#00c9db',
       },
     },
-    {
-      tag: 'link',
-      attrs: {
-        rel: 'preconnect',
-        href: 'https://fonts.googleapis.com',
-      },
-    },
-    {
-      tag: 'link',
-      attrs: {
-        rel: 'preconnect',
-        href: 'https://fonts.gstatic.com',
-        crossorigin: true,
-      },
-    },
   ],
 
   // Table of contents defaults

@@ -92,7 +92,10 @@ export default defineConfig({
 - **Headings**: Oswald (weight 200-400, uppercase)
 - **Body**: Nunito Sans (weight 400-600)
 
-Fonts are loaded from Google Fonts automatically.
+Fonts are **self-hosted** (v1.1.0+): variable-weight woff2 files (latin +
+latin-ext subsets, SIL OFL 1.1 — see `src/fonts/OFL-NOTICE.txt`) ship inside
+the package and are bundled by Astro/Vite when `theme.css` is imported. No
+request ever goes to Google Fonts.
 
 ## CSS Custom Properties
 
