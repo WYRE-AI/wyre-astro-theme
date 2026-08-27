@@ -1,19 +1,19 @@
-# @wyre-technology/astro-theme
+# @wyre-ai/astro-theme
 
 WYRE Technology brand theme for Astro Starlight documentation sites.
 
 ## Installation
 
-First, configure npm to use GitHub Packages for the `@wyre-technology` scope. Create or update `.npmrc` in your project:
+First, configure npm to use GitHub Packages for the `@wyre-ai` scope. Create or update `.npmrc` in your project:
 
 ```
-@wyre-technology:registry=https://npm.pkg.github.com
+@wyre-ai:registry=https://npm.pkg.github.com
 ```
 
 Then install:
 
 ```bash
-npm install @wyre-technology/astro-theme
+npm install @wyre-ai/astro-theme
 ```
 
 ## Usage
@@ -26,7 +26,7 @@ The preset includes the theme CSS plus sensible defaults for WYRE sites:
 // astro.config.mjs
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import { wyreStarlightPreset } from '@wyre-technology/astro-theme/preset';
+import { wyreStarlightPreset } from '@wyre-ai/astro-theme/preset';
 
 export default defineConfig({
   integrations: [
@@ -49,7 +49,7 @@ For more control, use the config helper which merges your settings:
 // astro.config.mjs
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import { wyreStarlightConfig } from '@wyre-technology/astro-theme/preset';
+import { wyreStarlightConfig } from '@wyre-ai/astro-theme/preset';
 
 export default defineConfig({
   integrations: [
@@ -73,7 +73,7 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'Your Site Title',
-      customCss: ['@wyre-technology/astro-theme/styles/theme.css'],
+      customCss: ['@wyre-ai/astro-theme/styles/theme.css'],
     }),
   ],
 });

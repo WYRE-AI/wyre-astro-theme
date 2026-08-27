@@ -1,6 +1,6 @@
 {
-  "name": "@wyre-technology/astro-theme",
-  "version": "1.1.0",
+  "name": "@wyre-ai/astro-theme",
+  "version": "1.2.0",
   "description": "WYRE Technology brand theme for Astro Starlight documentation sites",
   "type": "module",
   "main": "./src/index.js",
@@ -24,7 +24,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wyre-technology/wyre-astro-theme.git"
+    "url": "https://github.com/WYRE-AI/wyre-astro-theme.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"

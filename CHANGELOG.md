@@ -5,6 +5,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2026-08-27
+
+### Changed
+
+- **Renamed to `@wyre-ai/astro-theme` and moved to the `WYRE-AI` org.** The repo
+  transferred from `wyre-technology/wyre-astro-theme` to
+  `WYRE-AI/wyre-astro-theme`, and the package scope followed, because a GitHub
+  Packages scope is tied to the owning org and cannot be published across one.
+  This was the last piece of the WYRE-AI migration still living in the old org,
+  and it was actively breaking consumers: a workflow's `GITHUB_TOKEN` can only
+  read packages owned by its own org, so `WYRE-AI/conduit`'s docs build started
+  failing with `403 permission_denied: read_package` the moment conduit moved.
+  Both consumers (`WYRE-AI/conduit`, `WYRE-AI/wyre-ai`) now resolve the theme
+  with the stock `GITHUB_TOKEN` and no cross-org PAT.
+
+  **Migrating:** change the dependency name and the `.npmrc` scope line from
+  `@wyre-technology` to `@wyre-ai`. Nothing else changes — exports, preset, and
+  styles are byte-identical to 1.1.0.
+
 ## [1.0.4] - 2026-01-23
 
 ### Fixed
